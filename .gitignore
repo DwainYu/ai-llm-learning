@@ -1,34 +1,51 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+# 操作系统生成的文件
+.DS_Store
+Thumbs.db
 
-# Obsidian
-.obsidian/
-
-# IDE
+# IDE 和编辑器配置
 .idea/
 .vscode/
 *.swp
 *.swo
 
-# OS
-.DS_Store
-Thumbs.db
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 虚拟环境
+venv/
+.venv/
+env/
+.env
+
+# vLLM 教程中提到的虚拟环境目录 (如果存在于项目根目录)
+vllm/
+
+# ModelScope 下载的模型 (通常较大，不建议直接上传)
+# 如果模型存储在项目目录内，请取消注释并调整路径
+# models/
+
+# Obsidian 本地配置
+.obsidian/
+
+# 日志文件
+*.log
+logs/
+
+# 构建和分发产物
+build/
+dist/
+*.egg-info/
+
+# 覆盖率报告
+.coverage
+coverage.xml
+
+# 测试缓存
+.pytest_cache/
+.tox/
+
+# MyPy 缓存
+.mypy_cache/
