@@ -113,11 +113,10 @@ cat /usr/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
 ### 2.1 安装 uv
 
 ```bash
-sudo apt update
-sudo apt install python3-pip python3.10-venv -y
-python3 -m pip install --user pipx
-python3 -m pipx ensurepath
-pipx install uv
+curl -LsSf https://astral.sh/uv/install.sh | sh
+source ~/.bashrc
+source $HOME/.local/bin/env
+uv --version
 ```
 
 ### 2.2 创建项目目录与虚拟环境
